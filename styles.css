@@ -1,0 +1,80 @@
+/*BUG Does not adjust w.r.t screen size*/
+
+body {
+  margin: 0;
+  background-color: rgb(169, 169, 169, 0.7);
+  /* min-height: 100vh; */
+}
+
+.container {
+  height: 60vh;
+  width: 60vh;
+  background-color: black;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  box-shadow: 15px 15px 15px rgb(128, 128, 128, 0.5),
+    -10px -10px 5px rgb(128, 128, 128, 0.2),
+    10px -10px 7px rgb(128, 128, 128, 0.3),
+    -10px 10px 8px rgb(128, 128, 128, 0.3);
+}
+
+.box {
+  height: 32%;
+  width: 32%;
+  position: absolute;
+  background-color: white;
+  box-shadow: inset 5px 5px 15px 15px rgb(211, 211, 211, 0.8),
+    inset -5px -5px 15px 15px rgb(211, 211, 211, 0.8);
+}
+
+#box1 {
+  left: 0;
+  top: 0;
+}
+
+#box2 {
+  left: 34%;
+  top: 0;
+}
+
+#box3 {
+  right: 0;
+  top: 0;
+}
+
+#box4 {
+  left: 0;
+  top: 34%;
+}
+
+#box5 {
+  left: 34%;
+  top: 34%;
+}
+
+#box6 {
+  right: 0;
+  top: 34%;
+}
+
+#box7 {
+  left: 0;
+  bottom: 0;
+}
+
+#box8 {
+  left: 34%;
+  bottom: 0;
+}
+
+#box9 {
+  right: 0;
+  bottom: 0;
+}
+
+.token {
+  font-size: 3.5rem;
+  margin-top: 12px;
+  text-align: center;
+}
